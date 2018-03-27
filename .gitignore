@@ -83,3 +83,8 @@ dkms.conf
 *.exe
 *.out
 *.app
+
+
+#Intellij Idea
+.idea
+cmake-build-debug
