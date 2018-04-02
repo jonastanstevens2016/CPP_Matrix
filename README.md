@@ -12,3 +12,4 @@ git commit -m 'your message'
 git pull --rebase
 git push
 ```
+Junjie Chen
