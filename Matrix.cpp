@@ -1,7 +1,3 @@
-//
-// Created by asus on 3/26/2018.
-//
-
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -12,10 +8,10 @@ using namespace std;
 
 class Exception{
 private:
-	char* message;
+	string message;
 public:
 	Exception(): message(nullptr){}
-	Exception(const char* const str): message(message){}
+	Exception(const string& str): message(str){}
 };
 
 class InvalidMatrixOpsException: public Exception {
