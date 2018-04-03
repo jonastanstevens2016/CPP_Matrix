@@ -113,6 +113,14 @@ public:
 		}
 		return res;
 	}
+
+	// MOVE constructor
+	Matrix (Matrix&& orig) {
+		array = orig.array;
+		orig.array = nullptr;
+		rowlen = orig.rowlen;
+		collen = orig.collen;
+	}
 };
 
 
@@ -141,5 +149,3 @@ int main(){
 	Matrix e = b * d; // matrix  mult.
 	return 0;
 }
-
-
